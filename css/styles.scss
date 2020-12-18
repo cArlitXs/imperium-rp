@@ -1,4 +1,4 @@
-//sass --watch css/styles.scss css/styles.min.css --style compressed
+// sass --watch css/styles.scss css/styles.min.css --style compressed
 // Author: Carlos Alvarez Linares
 // Author URI: https://carlosalvarezlinares.com/
 // Version: 1.0
@@ -9,10 +9,13 @@ body {
 }
 
 .carousel-item {
-  height: 400px;
+  max-height: 40vh;
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
 }
 
-.carousel-item img {
-  width: 100%;
-  object-fit: contain;
+.cursor-pointer {
+  cursor: pointer;
 }

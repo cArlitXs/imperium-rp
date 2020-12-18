@@ -1,0 +1,49 @@
+{
+    "coches": [
+        { 
+            "id": 1, 
+            "title": "Pagani Huayra",
+            "photo": "cocheejemplo.jpg",
+            "price": "120000",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia erat ut erat auctor iaculis. Integer vulputate, mi eu ornare eleifend, orci lectus dictum leo, et efficitur quam velit a.",
+            "maxSpeed": "320kph",
+            "tunning": true
+        },
+        { 
+            "id": 2, 
+            "title": "Toyota Yaris",
+            "photo": "cocheejemplo.jpg",
+            "price": "60000",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia erat ut erat auctor iaculis. Integer vulputate, mi eu ornare eleifend, orci lectus dictum leo, et efficitur quam velit a.",
+            "maxSpeed": "160kph",
+            "tunning": false
+        },
+        { 
+            "id": 3, 
+            "title": "Fiat 500",
+            "photo": "cocheejemplo.jpg",
+            "price": "85000",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia erat ut erat auctor iaculis. Integer vulputate, mi eu ornare eleifend, orci lectus dictum leo, et efficitur quam velit a.",
+            "maxSpeed": "120kph",
+            "tunning": true
+        },
+        { 
+            "id": 4, 
+            "title": "Ford Shelby GT500",
+            "photo": "cocheejemplo.jpg",
+            "price": "240000",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia erat ut erat auctor iaculis. Integer vulputate, mi eu ornare eleifend, orci lectus dictum leo, et efficitur quam velit a.",
+            "maxSpeed": "380kph",
+            "tunning": true
+        },
+        { 
+            "id": 5, 
+            "title": "Smart",
+            "photo": "cocheejemplo.jpg",
+            "price": "45000",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia erat ut erat auctor iaculis. Integer vulputate, mi eu ornare eleifend, orci lectus dictum leo, et efficitur quam velit a.",
+            "maxSpeed": "140kph",
+            "tunning": false
+        }
+    ]
+}
