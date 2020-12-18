@@ -60,7 +60,7 @@ const cochesGallery = () => {
   coches.map((coche, index) => {
     let galeria = document.getElementById("gallery");
     galeria.innerHTML += `
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
             <div class="card cursor-pointer" data-toggle="modal" data-target="#exampleModal-${index}">
                 <img src="./assets/img/${
                   coche.photo
@@ -68,7 +68,9 @@ const cochesGallery = () => {
                 <div class="card-body">
                     <h5 class="card-title">${coche.title}</h5>
                     <p class="card-text">
-                        Precio: $ ${coche.price}
+                        Precio: <i class="fas fa-dollar-sign"></i> ${
+                          coche.price
+                        }
                     </p>
                 </div>
             </div>
@@ -77,7 +79,7 @@ const cochesGallery = () => {
             <div class="modal-dialog modal-lg modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">${
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-car"></i>&nbsp;${
                           coche.title
                         }</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -100,20 +102,29 @@ const cochesGallery = () => {
                         <div class='row'>
                             <div class='col-sm-12 col-md-4 col-lg-4'>
                                 <h6>Velocidad máxima:</h6>
-                                <p>${coche.maxSpeed}</p>
+                                <p><i class="fas fa-tachometer-alt"></i>&nbsp;${
+                                  coche.maxSpeed
+                                }</p>
                             </div>
                             <div class='col-sm-12 col-md-4 col-lg-4'>
                                 <h6>Tuneable:</h6>
-                                <p>${coche.tunning === true ? "Si" : "No"}</p>
+                                <p><i class="fas fa-tools"></i>&nbsp;${
+                                  coche.tunning === true ? "Si" : "No"
+                                }</p>
                             </div>
                             <div class='col-sm-12 col-md-4 col-lg-4'>
                                 <h6>Precio:</h6>
-                                <h4>$ ${coche.price}</h4>
+                                <h4><i class="fas fa-dollar-sign"></i> ${
+                                  coche.price
+                                }</h4>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal"><i class="fas fa-times"></i>&nbsp;Cerrar</button>
+                        <a class="btn btn-sm btn-success" target="_blank" href="mailto:ventas@gitanosrp.es?subject=Comprar%20coche%20${
+                          coche.title
+                        }&body=Escribe%20aquí%20tu%20mensaje"><i class="fas fa-shopping-cart"></i>&nbsp;Quiero este coche</a>
                     </div>
                 </div>
             </div>

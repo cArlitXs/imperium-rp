@@ -19,3 +19,34 @@ body {
 .cursor-pointer {
   cursor: pointer;
 }
+
+.-nightmode {
+  background: #000 !important;
+  color: #fff !important;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    color: #fff !important;
+  }
+}
+// .container.-nightmode .content-inner {
+//   width: 100% !important;
+//   margin: 0 !important;
+//   padding: 0 !important;
+// }
+
+.container.-nightmode .content-inner,
+.container.-nightmode .content-inner img,
+.container.-nightmode .content-inner video {
+  -webkit-filter: invert(1) hue-rotate(180deg);
+  filter: invert(1) hue-rotate(180deg);
+}
