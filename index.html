@@ -11,7 +11,7 @@
 </head>
 <body onload="cochesGallery()">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/">Gitanos RP</a>
+        <a class="navbar-brand" href="/"><img class='logo mr-2' src="./assets/img/logo.png" />Gitanos RP</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,6 +21,9 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="/normas">Normas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/foro">Foro</a>
                 </li>
             </ul>
             <span class='d-sm-block d-md-block d-lg-none'>
@@ -32,7 +35,7 @@
                         <a class="nav-link" href="#"><i class="fab fa-twitch"></i>&nbsp;Twitch</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fab fa-discord"></i>&nbsp;Discord</a>
+                        <a class="nav-link" target="_blank" href="https://discord.gg/szktRfcM"><i class="fab fa-discord"></i>&nbsp;Discord</a>
                     </li>
                 </ul>
             </span>
@@ -54,8 +57,15 @@
                     </li> -->
                     <li class="nav-item">
                         <h2>
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" target="_blank" href="https://discord.gg/szktRfcM" data-toggle="tooltip" data-placement="bottom" title="Entrar en Discord">
                                 <i class="fab fa-discord"></i>
+                            </a>
+                        </h2>
+                    </li>
+                    <li class="nav-item">
+                        <h2>
+                            <a class="nav-link text-success" href="fivem://connect/cfx.re/join/7m8jlr" data-toggle="tooltip" data-placement="bottom" title="Entrar al servidor">
+                                <i class="fas fa-play"></i>
                             </a>
                         </h2>
                     </li>
@@ -67,28 +77,10 @@
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active"
-                style="background-image: url('./assets/img/1.jpeg')">
-                <!-- <div class="carousel-caption d-none d-md-block">
-                    <h2 class="display-4">First Slide</h2>
-                    <p class="lead">This is a description for the first slide.</p>
-                </div> -->
-            </div>
-            <div class="carousel-item" style="background-image: url('./assets/img/2.jpg')">
-                <!-- <div class="carousel-caption d-none d-md-block">
-                    <h2 class="display-4">Second Slide</h2>
-                    <p class="lead">This is a description for the second slide.</p>
-                </div> -->
-            </div>
-            <div class="carousel-item" style="background-image: url('./assets/img/3.webp')">
-                <!-- <div class="carousel-caption d-none d-md-block">
-                    <h2 class="display-4">Third Slide</h2>
-                    <p class="lead">This is a description for the third slide.</p>
-                </div> -->
+                style="background-image: url('./assets/img/banner.png')">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -107,6 +99,7 @@
         <hr class="my-4">
         <p>Es importante que te leas las normas ya que dependemos de ellas para un buen rol.</p>
         <a class="btn btn-primary btn-lg" href="/normas" role="button">Leer las normas</a>
+        <a class="btn btn-success btn-lg" href="fivem://connect/cfx.re/join/7m8jlr" role="button">Entrar al servidor</a>
     </div>
 
     <div class='container'>

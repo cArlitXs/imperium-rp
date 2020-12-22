@@ -1,5 +1,26 @@
 "use strict";
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  let mybutton = document.getElementById("goTop");
+  mybutton.style.display = "none";
+  if (
+    document.body.scrollTop > 400 ||
+    document.documentElement.scrollTop > 400
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
 let coches = [
   {
     title: "Pagani Huayra",
@@ -47,14 +68,6 @@ let coches = [
     tunning: false,
   },
 ];
-
-// async function peticion() {
-//   const result = await fetch("http://localhost:3000/coches");
-//   const res = await result.json();
-//   coches = res;
-//   cochesLog();
-// }
-// peticion();
 
 const cochesGallery = () => {
   coches.map((coche, index) => {
@@ -122,7 +135,7 @@ const cochesGallery = () => {
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal"><i class="fas fa-times"></i>&nbsp;Cerrar</button>
-                        <a class="btn btn-sm btn-success" target="_blank" href="mailto:ventas@gitanosrp.es?subject=Comprar%20coche%20${
+                        <a class="btn btn-sm btn-success" target="_blank" href="mailto:donaciones@gitanosrp.es?subject=Comprar%20coche%20${
                           coche.title
                         }&body=Escribe%20aquí%20tu%20mensaje"><i class="fas fa-shopping-cart"></i>&nbsp;Quiero este coche</a>
                     </div>

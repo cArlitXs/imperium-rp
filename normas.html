@@ -11,53 +11,46 @@
     <link rel="stylesheet" href="./css/styles.min.css">
 </head>
 
-<body class="contenedor content-inner">
+<body class="contenedor content-inner" id="top">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/">Gitanos RP</a>
+        <a class="navbar-brand" href="/"><img class='logo mr-2' src="./assets/img/logo.png" />Gitanos RP</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
+    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link active" href="/normas">Normas</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/foro">Foro</a>
+                </li>
             </ul>
             <span class='d-sm-block d-md-block d-lg-none'>
                 <ul class="navbar-nav">
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fab fa-twitch"></i>&nbsp;Twitch</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fab fa-discord"></i>&nbsp;Discord</a>
+                        <a class="nav-link" target="_blank" href="https://discord.gg/szktRfcM"><i
+                                class="fab fa-discord"></i>&nbsp;Discord</a>
                     </li>
                 </ul>
             </span>
             <span class=' d-none d-sm-none  d-md-none d-lg-block'>
                 <ul class="navbar-nav">
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                         <h2>
-                            <a class="nav-link" href="#">
-                                <i class="fab fa-twitter"></i>
+                            <a class="nav-link" target="_blank" href="https://discord.gg/szktRfcM" data-toggle="tooltip"
+                                data-placement="bottom" title="Entrar en Discord">
+                                <i class="fab fa-discord"></i>
                             </a>
                         </h2>
                     </li>
                     <li class="nav-item">
                         <h2>
-                            <a class="nav-link" href="#">
-                                <i class="fab fa-twitch"></i>
-                            </a>
-                        </h2>
-                    </li> -->
-                    <li class="nav-item">
-                        <h2>
-                            <a class="nav-link" href="#">
-                                <i class="fab fa-discord"></i>
+                            <a class="nav-link text-success" href="fivem://connect/cfx.re/join/7m8jlr" data-toggle="tooltip"
+                                data-placement="bottom" title="Entrar al servidor">
+                                <i class="fas fa-play"></i>
                             </a>
                         </h2>
                     </li>
@@ -65,8 +58,66 @@
             </span>
         </div>
     </nav>
+
     <div>
-        <div class='container text-justify content-inner'>
+        <div class='container text-justify'>
+            <div class="accordion pt-4" id="accordionExample">
+                <div class="card">
+                    <div class="card-header p-0" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Índice
+                            </button>
+                        </h2>
+                    </div>
+            
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class='text-left'>
+                                <small>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <a href="#conceptos-basicos-rol">CONCEPTOS BÁSICOS DE ROL</a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#consideraciones-generales">CONSIDERACIONES GENERALES</a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#zonas-seguras-ilegales">ZONAS SEGURAS Y ZONAS ILEGALES</a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#consideraciones-generales-facciones-legales">CONSIDERACIONES GENERALES
+                                                FACCIONES LEGALES</a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#consideraciones-generales-robos-atracos">CONSIDERACIONES GENERALES SOBRE LOS
+                                                ROBOS Y ATRACOS A
+                                                ESTABLECIMIENTOS</a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#consideraciones-ooc">CONSIDERACIONES OOC</a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#donaciones">DONACIONES</a>
+                                        </li>
+                                    </ul>
+                                </small>
+                            </div>
+                            <hr/>
+                            <div class="form-inline my-2 my-lg-0">
+                                <input class="form-control form-control-sm mr-sm-2" type="text" placeholder="Buscar..." id="buscador"
+                                    onchange="buscarPalabra()">
+                                <button class="btn btn-outline-success btn-sm my-2 my-sm-0" type="button" onclick="buscarPalabla()"><i
+                                        class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a id="goTop" class='btn btn-primary float-button border border-white' href="#top"><i class="fas fa-arrow-up"></i></a>
+
             <div class='row pt-4'>
                 <div class='col text-right'>
                     <button class="night-mode-button btn btn-outline-dark btn-sm d-print-none">
@@ -88,7 +139,7 @@
                 esa es la principal norma de un roleplay.</i>
             </p>
 
-            <h2>CONSIDERACIONES BÁSICAS</h2>
+            <h2 id="consideraciones-basicas">CONSIDERACIONES BÁSICAS</h2>
             <ul>
                 <li>
                     La normativa presentada a continuación sirve como herramienta auxiliar de la
@@ -124,7 +175,7 @@
 
             <ol type="1">
                 <li>
-                    <h3>CONCEPTOS BÁSICOS DE ROL</h3>
+                    <h3 id="conceptos-basicos-rol">CONCEPTOS BÁSICOS DE ROL</h3>
                     <ol type="1">
                         <li>
                             <b>Nombre del personaje</b>
@@ -496,7 +547,7 @@
                         </li>
                     </ol>
                 </li>
-                <li><h3>CONSIDERACIONES GENERALES</h3></li>
+                <li><h3 id="consideraciones-generales">CONSIDERACIONES GENERALES</h3></li>
                 <ol type="1">
                     <li>
                         <b>Valorar tu vida</b>
@@ -1211,7 +1262,7 @@
                         </p>
                     </li>
                 </ol>
-                <li><h3>ZONAS SEGURAS Y ZONAS ILEGALES</h3></li>
+                <li><h3 id="zonas-seguras-ilegales">ZONAS SEGURAS Y ZONAS ILEGALES</h3></li>
                 <ol type="1">
                     <li>
                         <b>¿Qué es una zona segura (ZS)?</b>
@@ -1280,7 +1331,7 @@
                     </li>
                 </ol>
                 <li>
-                    <h3>CONSIDERACIONES GENERALES FACCIONES LEGALES</h3>
+                    <h3 id="consideraciones-generales-facciones-legales">CONSIDERACIONES GENERALES FACCIONES LEGALES</h3>
                 </li>
                 <ol type="1">
                     <li><b>POLICÍAS (Cuerpos de Seguridad)</b></li>
@@ -1374,7 +1425,7 @@
                         </p>
                     </li>
                 </ol>
-                <li><h3>CONSIDERACIONES GENERALES SOBRE LOS ROBOS Y
+                <li><h3 id="consideraciones-generales-robos-atracos">CONSIDERACIONES GENERALES SOBRE LOS ROBOS Y
                 ATRACOS A ESTABLECIMIENTOS</h3></li>
                 <ol type="1">
                     <li>
@@ -1577,7 +1628,7 @@
                         </p>
                     </li>
                 </ol>
-                <li><h3>CONSIDERACIONES OOC</h3></li>
+                <li><h3 id="consideraciones-ooc">CONSIDERACIONES OOC</h3></li>
                 <ol type="1">
                     <li>
                         <b>
@@ -1641,7 +1692,7 @@
                         </p>
                     </li>
                 </ol>
-                <li><h3>Donaciones</h3></li>
+                <li><h3 id="donaciones">Donaciones</h3></li>
                 <p>
                     Todas las donaciones que se aporten al servidor, no tendrán posibilidad de reembolso bajo
                     ningún concepto. Las donaciones se tomarán como ayuda para mantenimiento y mejoras
@@ -1679,6 +1730,10 @@
                 button.toggleClass("btn-outline-light");
             });
         });
+        function buscarPalabra() {
+            let palabra = document.getElementById('buscador').value;
+            let existe = window.find(palabra);
+        }
     </script>
 </body>
 
