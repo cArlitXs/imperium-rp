@@ -4,7 +4,7 @@ Allow: /
 Allow: /assets/img
 Allow: /css
 Allow: /js
-Disallow: 404.html
+Disallow: /404.html
 
 User-agent: Googlebot-Image
 Allow: /assets/img
@@ -14,4 +14,4 @@ Allow: /
 Allow: /assets/img
 Allow: /css
 Allow: /js
-Disallow: 404.html
+Disallow: /404.html
