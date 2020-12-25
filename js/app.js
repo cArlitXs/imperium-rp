@@ -4,23 +4,6 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });
 
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  let mybutton = document.getElementById("goTop");
-  mybutton.style.display = "none";
-  if (
-    document.body.scrollTop > 400 ||
-    document.documentElement.scrollTop > 400
-  ) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
 let coches = [
   {
     title: "Pagani Huayra",
