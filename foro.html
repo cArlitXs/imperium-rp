@@ -9,6 +9,52 @@
     <link rel="stylesheet" href="https://unpkg.com/bootswatch@4.5.3/dist/lux/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/styles.min.css">
+
+    <meta property="og:title" content="Gitanos RP">
+    <meta property="og:site_name" content="https://gitanosrp.es/">
+    <meta property="og:url" content="https://gitanosrp.es/">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://gitanosrp.es/assets/img/logo.png">
+
+    <!-- SCHEMA -->
+    <script type="application/ld+json">
+            {
+    
+              "@context": "https://schema.org/",
+              "@type": "WebSite",
+              "name": "Gitanos RP",
+              "url": "https://gitanosrp.es/",
+              "image": "https://gitanosrp.es/assets/img/logo.png",
+              "logo": "https://gitanosrp.es/assets/img/logo.png",
+              "email": "administracion@gitanosrp.es",
+              "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "España",
+                },
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": {
+                        "@type": "DayOfWeek",
+                        "name": "Lunes, Martes, Miercoles, Jueves, Viernes, Sábado, Domingo"
+                    }
+                },
+              "sameAs": [
+                "https://carlosalvarezlinares.com/"
+              ],
+              "jobTitle": "Programador"  
+            }
+        </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6E2BLVSBM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B6E2BLVSBM');
+    </script>
 </head>
 
 <body onload="cochesGallery()">
@@ -80,7 +126,7 @@
     </nav>
 
     <div id="foro">
-        <iframe src="https://gitanosrp.foroactivo.com/" frameborder="0"></iframe>
+        <iframe id='iframeForo' src="https://gitanosrp.foroactivo.com/" frameborder="0"></iframe>
     </div>
 
     <footer class="bg-light text-center text-lg-start">

@@ -1,0 +1,17 @@
+Sitemap: https://gitanosrp.es/sitemap.xml
+User-agent: Googlebot
+Allow: /
+Allow: /assets/img
+Allow: /css
+Allow: /js
+Disallow: 404.html
+
+User-agent: Googlebot-Image
+Allow: /assets/img
+
+User-agent: *
+Allow: /
+Allow: /assets/img
+Allow: /css
+Allow: /js
+Disallow: 404.html
